@@ -152,7 +152,7 @@ with col_uploader:
         "Pilih file gambar...", type=["jpg", "jpeg", "png"], label_visibility="collapsed"
     )
     if uploaded_file:
-        st.image(uploaded_file, caption="Gambar siap dianalisis", use_column_width=True)
+        st.image(uploaded_file, caption="Gambar siap dianalisis", use_container_width=True)
         
         if st.button("🚀 Analisis Gambar Makanan", use_container_width=True, type="primary"):
             with col_display:
@@ -163,7 +163,7 @@ with col_uploader:
                     
                     annotated_image = results[0].plot()
                     annotated_image_rgb = Image.fromarray(annotated_image[..., ::-1])
-                    st.image(annotated_image_rgb, caption="Gambar Hasil Deteksi", use_column_width=True)
+                    st.image(annotated_image_rgb, caption="Gambar Hasil Deteksi", use_container_width=True)
                     
                     detected_names = [model.names[int(c)] for r in results for c in r.boxes.cls]
                     
