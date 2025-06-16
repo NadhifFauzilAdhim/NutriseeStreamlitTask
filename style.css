@@ -1,0 +1,15 @@
+
+/* Gaya untuk kontainer kartu utama */
+div[data-testid="stVerticalBlock"] > [data-testid="stVerticalBlock"] > [data-testid="stVerticalBlock"] > [data-testid="stVerticalBlock"] > div[data-testid="stExpander"] > div > div > div[data-testid="stVerticalBlock"] {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gaya untuk metrik agar lebih menonjol */
+div[data-testid="stMetric"] {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
